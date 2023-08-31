@@ -18,6 +18,7 @@
 3. DB 스키마 정의 
 4. .env 파일 만들고 환경변수 작성 
     ```text
+   API_KEY={API_KEY}
     MYSQL_ROOT_PASSWORD={MYSQL root 사용자 계정 비밀번호}
     DATABASE_NAME={DB 스키마 이름}
     ```

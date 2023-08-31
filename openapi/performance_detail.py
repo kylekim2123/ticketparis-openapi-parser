@@ -1,5 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
+from decouple import config
 
 from openapi.hall_detail import get_hall_detail
 from openapi.utils import (
@@ -14,7 +15,7 @@ from openapi.utils import (
 def get_performance_detail(performance_id):
     url = f"http://kopis.or.kr/openApi/restful/pblprfr/{performance_id}"
     params = {
-        "service": "16d85593b3c94d4c9cb6258b8944cbf3"
+        "service": config("API_KEY")
     }
 
     response = requests.get(url, params)

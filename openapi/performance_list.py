@@ -1,5 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
+from decouple import config
 
 from openapi.performance_detail import get_performance_detail
 
@@ -7,7 +8,7 @@ from openapi.performance_detail import get_performance_detail
 def get_performance_list(start_page, rows):
     url = "http://kopis.or.kr/openApi/restful/pblprfr"
     params = {
-        "service": "16d85593b3c94d4c9cb6258b8944cbf3",
+        "service": config("API_KEY"),
         "stdate": 20230801,
         "eddate": 20230930,
         "cpage": start_page,

@@ -30,7 +30,5 @@ def insert_reservations(connection, schedule_id_list):
             )
 
             cursor.execute(sql, data)
-
             update_schedule_seat_counts(connection, seats_count - 1, schedule_id)
-
             connection.commit()
