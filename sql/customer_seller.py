@@ -45,13 +45,13 @@ def insert_seller(connection):
     """
 
     data = (
-        "testSeller",
-        "$3b$23$76taABQWE9ydE0ZsuWkITexXVjLBbTTHWc509/OLI5nM9d5d3fhRG",
-        "판매자1",
-        "testSeller@ticketparis.com",
-        date(1980, 2, 1),
-        "010-4321-8765",
-        "서울특별시 강남구 방배동"
+        'testSeller1',
+        '$4b$12$76taFAFPE9ydE0ZsuWkIZexWVjLBbEIRNc509/OLI5nM9d5r3fkRG',
+        '판매자1',
+        '100-12-56789',
+        '주식회사 티켓파리',
+        'testSeller1@ticketparis.com',
+        '010-4234-1674'
     )
 
     cursor.execute(sql, data)
